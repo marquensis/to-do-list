@@ -1,0 +1,60 @@
+body {
+    background: hotpink;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#container {
+    height: 100vh;
+    width: auto;
+    /*border: 3px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin: 20px;
+    font-size: 60px;
+
+}
+#to-do-area{
+    width: 400px;
+    height: 500px;
+    /*border: 3px solid red;*/
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+#input-task {
+    background: transparent;
+    color: white;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.delete-btn {
+    padding: 3px 3px;
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    margin: 0 15px 10px 15px;
+}
+
+li > input {
+    margin: 10px;
+    size: auto;
+}
+input[type = "checkbox"]:checked + span{
+    text-decoration: line-through;
+}
